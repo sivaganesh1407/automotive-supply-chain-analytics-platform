@@ -22,8 +22,11 @@ Backend system simulating automotive manufacturing and supply chain data pipelin
 ## Quick Start
 
 ```bash
-cd backend
-mvn spring-boot:run
+# Option 1: Run script
+./run.sh
+
+# Option 2: Direct
+cd backend && mvn spring-boot:run
 ```
 
 - **API:** http://localhost:8080
@@ -39,6 +42,10 @@ cd backend && mvn test
 ## Deploy
 
 See [DEPLOYMENT.md](DEPLOYMENT.md) for Render, Railway, or Fly.io deployment.
+
+## Next: 3rd Project?
+
+See [PROJECT_IDEAS.md](PROJECT_IDEAS.md) for recommendations (frontend for this project, e-commerce API, or real-time chat).
 
 ## Project Structure
 
