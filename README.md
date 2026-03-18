@@ -21,17 +21,19 @@ Backend system simulating automotive manufacturing and supply chain data pipelin
 
 ## Quick Start
 
+**Backend:**
 ```bash
-# Option 1: Run script
-./run.sh
-
-# Option 2: Direct
 cd backend && mvn spring-boot:run
 ```
 
+**Frontend:**
+```bash
+cd frontend && npm install && npm run dev
+```
+
+- **Frontend UI:** http://localhost:5173
 - **API:** http://localhost:8080
 - **Swagger:** http://localhost:8080/swagger-ui.html
-- **Health:** http://localhost:8080/actuator/health
 
 ## Run Tests
 

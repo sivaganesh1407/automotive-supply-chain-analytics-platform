@@ -5,7 +5,7 @@ Your GitHub token needs `workflow` scope to push `.github/workflows/`. Add the w
 1. Go to: https://github.com/sivaganesh1407/automotive-supply-chain-analytics-platform
 2. Click **Add file** → **Create new file**
 3. In the filename box, type: `.github/workflows/ci.yml`
-4. Copy the content from `.github/workflows/ci.yml` in this repo
+4. Copy the content from `ci-workflow.yml` in this repo
 5. Click **Commit new file**
 
-Done! The CI badge will turn green after the first run.
+Done! The CI badge will turn green after the first run. The workflow builds both backend and frontend.
