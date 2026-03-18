@@ -2,24 +2,16 @@
 
 Deploy this project to showcase it on your portfolio. Free options:
 
-## Option 1: Render.com (Recommended)
+## Option 1: Render.com (Recommended) - One-Click Blueprint
 
 1. Push code to GitHub
-2. Go to [render.com](https://render.com) → New → Web Service
-3. Connect your GitHub repo
-4. Configure:
-   - **Root Directory:** `backend`
-   - **Runtime:** Docker
-   - **Instance Type:** Free
-5. Add PostgreSQL: New → PostgreSQL (free tier)
-6. Add environment variables:
-   - `SPRING_PROFILES_ACTIVE` = `prod`
-   - `SPRING_DATASOURCE_URL` = (from PostgreSQL connection string)
-   - `SPRING_DATASOURCE_USERNAME` = (from PostgreSQL)
-   - `SPRING_DATASOURCE_PASSWORD` = (from PostgreSQL)
-7. Deploy
+2. Go to [dashboard.render.com](https://dashboard.render.com) → **New** → **Blueprint**
+3. Connect your GitHub repo: `sivaganesh1407/automotive-supply-chain-analytics-platform`
+4. Render will detect `render.yaml` and create the Web Service + PostgreSQL
+5. Click **Apply**
+6. Wait for deploy (~5 min)
 
-Your API will be live at `https://your-app.onrender.com`
+Your API will be live at `https://automotive-supply-chain-api.onrender.com`
 
 ## Option 2: Railway
 

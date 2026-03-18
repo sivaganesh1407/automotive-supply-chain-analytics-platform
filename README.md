@@ -39,9 +39,14 @@ cd backend && mvn spring-boot:run
 cd backend && mvn test
 ```
 
-## Deploy
+## Deploy to Render (Free)
 
-See [DEPLOYMENT.md](DEPLOYMENT.md) for Render, Railway, or Fly.io deployment.
+1. Go to [dashboard.render.com](https://dashboard.render.com) → **New** → **Blueprint**
+2. Connect repo: `sivaganesh1407/automotive-supply-chain-analytics-platform`
+3. Click **Apply** (render.yaml auto-configures everything)
+4. API live at `https://automotive-supply-chain-api.onrender.com`
+
+See [DEPLOYMENT.md](DEPLOYMENT.md) for Railway, Fly.io options.
 
 ## Next: 3rd Project?
 

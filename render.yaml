@@ -1,0 +1,30 @@
+# Render Blueprint - One-click deploy
+# https://render.com/docs/blueprint-spec
+
+databases:
+  - name: automotive-db
+    databaseName: automotive_db
+    plan: free
+
+services:
+  - type: web
+    name: automotive-supply-chain-api
+    runtime: docker
+    dockerfilePath: ./backend/Dockerfile
+    dockerContext: ./backend
+    plan: free
+    envVars:
+      - key: SPRING_PROFILES_ACTIVE
+        value: prod
+      - key: DATABASE_URL
+        fromDatabase:
+          name: automotive-db
+          property: connectionString
+      - key: DATABASE_USER
+        fromDatabase:
+          name: automotive-db
+          property: user
+      - key: DATABASE_PASSWORD
+        fromDatabase:
+          name: automotive-db
+          property: password
