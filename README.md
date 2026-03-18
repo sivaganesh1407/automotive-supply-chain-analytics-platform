@@ -1,2 +1,57 @@
-# automotive-supply-chain-analytics-platform
-Backend system simulating automotive manufacturing and supply chain data pipelines with ETL processing and analytics APIs using Spring Boot and PostgreSQL.
+# Automotive Supply Chain Analytics Platform
+
+[![CI](https://github.com/sivaganesh1407/automotive-supply-chain-analytics-platform/actions/workflows/ci.yml/badge.svg)](https://github.com/sivaganesh1407/automotive-supply-chain-analytics-platform/actions/workflows/ci.yml)
+
+Backend system simulating automotive manufacturing and supply chain data pipelines with **ETL processing** and **analytics APIs** using Spring Boot, JPA, and PostgreSQL.
+
+## Tech Stack
+
+- **Java 11** · **Spring Boot 2.7** · **Spring Data JPA** · **H2 / PostgreSQL**
+- **Maven** · **Docker** · **Swagger/OpenAPI** · **Actuator**
+
+## Features
+
+- REST API for vehicles, inventory, dealers
+- ETL pipeline (Extract-Transform-Load) from JSON
+- Production, inventory, and dealer analytics
+- Unit & integration tests
+- API documentation (Swagger UI)
+- Docker support
+- CI/CD with GitHub Actions
+
+## Quick Start
+
+```bash
+cd backend
+mvn spring-boot:run
+```
+
+- **API:** http://localhost:8080
+- **Swagger:** http://localhost:8080/swagger-ui.html
+- **Health:** http://localhost:8080/actuator/health
+
+## Run Tests
+
+```bash
+cd backend && mvn test
+```
+
+## Deploy
+
+See [DEPLOYMENT.md](DEPLOYMENT.md) for Render, Railway, or Fly.io deployment.
+
+## Project Structure
+
+```
+backend/
+├── controller/    # REST endpoints
+├── service/      # Business logic
+├── repository/   # JPA repositories
+├── model/        # Entities
+├── config/       # Configuration
+└── dto/          # Data transfer objects
+```
+
+## License
+
+MIT

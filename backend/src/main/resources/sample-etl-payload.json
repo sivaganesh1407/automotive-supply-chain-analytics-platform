@@ -1,0 +1,48 @@
+{
+  "vehicles": [
+    {
+      "model": "Sedan X1",
+      "plantLocation": "Detroit",
+      "productionDate": "2025-03-15"
+    },
+    {
+      "model": "SUV Y2",
+      "plantLocation": "Michigan",
+      "productionDate": "2025-03-16"
+    }
+  ],
+  "inventory": [
+    {
+      "vehicleId": 1,
+      "status": "IN_STOCK",
+      "warehouseLocation": "Warehouse A"
+    },
+    {
+      "vehicleId": 2,
+      "status": "IN_TRANSIT",
+      "warehouseLocation": "Warehouse B"
+    }
+  ],
+  "dealers": [
+    {
+      "name": "Metro Auto Group",
+      "region": "North"
+    },
+    {
+      "name": "Coastal Motors",
+      "region": "South"
+    }
+  ],
+  "productionMetrics": [
+    {
+      "vehicleId": 1,
+      "productionTime": 45.5,
+      "defectsCount": 0
+    },
+    {
+      "vehicleId": 2,
+      "productionTime": 52.3,
+      "defectsCount": 1
+    }
+  ]
+}
