@@ -9,7 +9,7 @@ npm install
 npm run dev
 ```
 
-Open http://localhost:5173
+Open http://localhost:5174
 
 **Note:** Start the backend first (`cd backend && mvn spring-boot:run`)
 
@@ -36,4 +36,4 @@ npm run build
 
 ## API URL
 
-Set `VITE_API_URL` for production (e.g. `https://automotive-supply-chain-api.onrender.com`)
+Set `VITE_API_URL` for production builds to your deployed API base URL (see `frontend/.env.example`).

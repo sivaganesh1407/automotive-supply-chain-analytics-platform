@@ -17,7 +17,7 @@ USER spring:spring
 
 COPY --from=build /app/target/*.jar app.jar
 
-EXPOSE 8080
+EXPOSE 9090
 
 # Convert Render's postgresql:// to jdbc:postgresql:// for Spring Boot
 COPY entrypoint.sh /app/entrypoint.sh

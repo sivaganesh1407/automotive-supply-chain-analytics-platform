@@ -6,12 +6,12 @@ Deploy this project to showcase it on your portfolio. Free options:
 
 1. Push code to GitHub
 2. Go to [dashboard.render.com](https://dashboard.render.com) → **New** → **Blueprint**
-3. Connect your GitHub repo: `sivaganesh1407/automotive-supply-chain-analytics-platform`
+3. Connect your GitHub repository (fork or your own copy of this project)
 4. Render will detect `render.yaml` and create the Web Service + PostgreSQL
 5. Click **Apply**
 6. Wait for deploy (~5 min)
 
-Your API will be live at `https://automotive-supply-chain-api.onrender.com`
+Your API URL is shown in the Render dashboard (for example `https://<your-service-name>.onrender.com`).
 
 ## Option 2: Railway
 

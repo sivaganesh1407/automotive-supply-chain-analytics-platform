@@ -24,7 +24,7 @@ export default function Dashboard({ apiBase }) {
         setInventory(i)
         setDealers(d)
       } catch (e) {
-        setError('Could not connect to API. Is the backend running on port 8080?')
+        setError('Could not connect to API. Is the backend running on port 9090?')
       } finally {
         setLoading(false)
       }

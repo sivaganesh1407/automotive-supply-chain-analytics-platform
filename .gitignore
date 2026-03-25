@@ -42,3 +42,8 @@ node_modules/
 frontend/node_modules/
 frontend/dist/
 backend/package-lock.json
+
+# Local secrets / env
+.env
+.env.local
+.env.*.local

@@ -5,7 +5,7 @@ import Inventory from './components/Inventory'
 import Dealers from './components/Dealers'
 import ETLPanel from './components/ETLPanel'
 
-const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:8080'
+const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:9090'
 
 function App() {
   const [activeTab, setActiveTab] = useState('dashboard')

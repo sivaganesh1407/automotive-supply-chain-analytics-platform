@@ -1,11 +1,11 @@
 # Add CI Workflow (One-Time Setup)
 
-Your GitHub token needs `workflow` scope to push `.github/workflows/`. Add the workflow manually:
+If `.github/workflows/ci.yml` is not yet in your remote repository, add it manually:
 
-1. Go to: https://github.com/sivaganesh1407/automotive-supply-chain-analytics-platform
+1. Open your repository on GitHub
 2. Click **Add file** → **Create new file**
 3. In the filename box, type: `.github/workflows/ci.yml`
-4. Copy the content from `ci-workflow.yml` in this repo
+4. Copy the content from `ci-workflow.yml` in this repo (or from `.github/workflows/ci.yml` if already present locally)
 5. Click **Commit new file**
 
-Done! The CI badge will turn green after the first run. The workflow builds both backend and frontend.
+Done! The CI badge will work after you update `OWNER` and `REPO` in [README.md](README.md). The workflow builds both backend and frontend.

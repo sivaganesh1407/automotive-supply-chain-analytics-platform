@@ -1,6 +1,10 @@
 # Automotive Supply Chain Analytics Platform
 
-[![CI](https://github.com/sivaganesh1407/automotive-supply-chain-analytics-platform/actions/workflows/ci.yml/badge.svg)](https://github.com/sivaganesh1407/automotive-supply-chain-analytics-platform/actions/workflows/ci.yml)
+This project is a personal portfolio project built independently. It uses only public technologies and does not include any proprietary code or systems.
+
+After you push this repository to GitHub, replace `OWNER` and `REPO` in the badge URL below with your account and repository name.
+
+[![CI](https://github.com/OWNER/REPO/actions/workflows/ci.yml/badge.svg)](https://github.com/OWNER/REPO/actions/workflows/ci.yml)
 
 Backend system simulating automotive manufacturing and supply chain data pipelines with **ETL processing** and **analytics APIs** using Spring Boot, JPA, and PostgreSQL.
 
@@ -31,9 +35,11 @@ cd backend && mvn spring-boot:run
 cd frontend && npm install && npm run dev
 ```
 
-- **Frontend UI:** http://localhost:5173
-- **API:** http://localhost:8080
-- **Swagger:** http://localhost:8080/swagger-ui.html
+- **Frontend UI:** http://localhost:5174
+- **API:** http://localhost:9090
+- **Swagger:** http://localhost:9090/swagger-ui.html
+
+Optional: copy `frontend/.env.example` to `frontend/.env` if you need a non-default API URL.
 
 ## Run Tests
 
@@ -44,9 +50,9 @@ cd backend && mvn test
 ## Deploy to Render (Free)
 
 1. Go to [dashboard.render.com](https://dashboard.render.com) → **New** → **Blueprint**
-2. Connect repo: `sivaganesh1407/automotive-supply-chain-analytics-platform`
-3. Click **Apply** (render.yaml auto-configures everything)
-4. API live at `https://automotive-supply-chain-api.onrender.com`
+2. Connect your fork or copy of this GitHub repository
+3. Click **Apply** (`render.yaml` configures the web service and database)
+4. Use the HTTPS URL Render assigns to your service (for example `https://<your-service-name>.onrender.com`)
 
 See [DEPLOYMENT.md](DEPLOYMENT.md) for Railway, Fly.io options.
 

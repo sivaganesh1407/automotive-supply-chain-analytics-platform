@@ -13,7 +13,7 @@ Spring Boot backend for automotive manufacturing data pipelines, ETL processing,
 mvn spring-boot:run
 ```
 
-The server starts at `http://localhost:8080`.
+The server starts at `http://localhost:9090` (override with `PORT=...` or `server.port` if needed).
 
 ## Run Tests
 
@@ -23,8 +23,8 @@ mvn test
 
 ## API Documentation
 
-- **Swagger UI**: http://localhost:8080/swagger-ui.html
-- **OpenAPI JSON**: http://localhost:8080/api-docs
+- **Swagger UI**: http://localhost:9090/swagger-ui.html
+- **OpenAPI JSON**: http://localhost:9090/api-docs
 
 ## API Endpoints
 
@@ -47,12 +47,12 @@ mvn test
 ## Profiles
 
 - **default** / **dev**: H2 in-memory database
-- **prod**: PostgreSQL (set `SPRING_DATASOURCE_*` env vars)
+- **prod**: PostgreSQL — set `SPRING_DATASOURCE_URL`, `SPRING_DATASOURCE_USERNAME`, and `SPRING_DATASOURCE_PASSWORD` (or use `docker-compose`, which sets them). Render supplies `DATABASE_*`; `entrypoint.sh` maps them to Spring properties.
 - **test**: H2 for tests
 
 ## H2 Console (dev only)
 
-Access at `http://localhost:8080/h2-console`
+Access at `http://localhost:9090/h2-console`
 
 - JDBC URL: `jdbc:h2:mem:automotive_db`
 - Username: `sa`
@@ -64,7 +64,7 @@ Access at `http://localhost:8080/h2-console`
 # Build and run with PostgreSQL
 docker-compose up --build
 
-# App: http://localhost:8080
+# App: http://localhost:9090
 # PostgreSQL: localhost:5432
 ```
 
@@ -73,7 +73,7 @@ docker-compose up --build
 See `src/main/resources/sample-etl-payload.json` for a sample POST body for `/etl/run`.
 
 ```bash
-curl -X POST http://localhost:8080/etl/run \
+curl -X POST http://localhost:9090/etl/run \
   -H "Content-Type: application/json" \
   -d @src/main/resources/sample-etl-payload.json
 ```
